@@ -6639,7 +6639,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   overflow: hidden;
   padding: 72px;
   border-radius: 40px;
-  background: url("../img/bg-offer.png") no-repeat 50% 50%/cover;
+  background: url("https://ui8-collab.herokuapp.com/img/bg-offer.png") no-repeat 50% 50%/cover;
   color: #fff;
 }
 
