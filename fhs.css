@@ -2121,7 +2121,6 @@ body.no-scroll {
   left: 0;
   right: 0;
   z-index: 10;
-  padding: 48px 0;
 }
 
 .header > .header__center {
@@ -7728,9 +7727,6 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 @media only screen and (max-width: 1199px) {
-  .header {
-    padding: 40px 0;
-  }
   .header__center {
     padding: 0 36px;
   }
@@ -8225,9 +8221,6 @@ body:not(.touch-device) .header__item:hover .header__body {
   .center {
     padding: 0 40px;
   }
-  .header {
-    padding: 32px 0;
-  }
   .header__nav {
     margin-right: auto;
   }
@@ -8656,9 +8649,6 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .center {
     padding: 0 32px;
-  }
-  .header {
-    padding: 40px 0;
   }
   .header__logo {
     position: relative;
