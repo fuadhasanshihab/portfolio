@@ -6908,6 +6908,8 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .footer__company {
+  height: 32px;
+  width: 32px;
   margin-right: 16px;
   font-size: 0;
 }
