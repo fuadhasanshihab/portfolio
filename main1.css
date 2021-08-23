@@ -5081,7 +5081,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   margin: 0 -20px;
 }
 
-.demo__item {
+.demo__item .demo__iitem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5098,21 +5098,21 @@ body:not(.touch-device) .header__item:hover .header__body {
   border-radius: 40px;
 }
 
-.demo__item:first-child {
+.demo__iitem:first-child .demo__iitem:nth-child(2) {
   border: 1px solid #E3E6E9;
   background: #fff;
 }
 
-.demo__item:nth-child(2) {
+.demo__item:nth-child(2) .demo__item:first-child {
   background: #5956E9;
   color: #fff;
 }
 
-.demo__item:nth-child(2) .demo__text {
+.demo__item:nth-child(2) .demo__text .demo__item:first-child {
   color: #fff;
 }
 
-.demo__item:nth-child(2) .demo__btn {
+.demo__item:nth-child(2) .demo__btn .demo__item:first-child {
   -webkit-box-shadow: 0px 48px 48px rgba(0, 0, 0, 0.12), 0px 14px 20px rgba(35, 34, 87, 0.4);
   box-shadow: 0px 48px 48px rgba(0, 0, 0, 0.12), 0px 14px 20px rgba(35, 34, 87, 0.4);
 }
@@ -7999,7 +7999,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   .demo {
     margin-bottom: 210px;
   }
-  .demo__item {
+  .demo__item .demo__iitem {
     padding: 80px 50px;
   }
   .demo__title {
@@ -8418,7 +8418,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   .demo__list {
     margin: 0 -12px;
   }
-  .demo__item {
+  .demo__item .demo__iitem {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 calc(50% - 24px);
     flex: 0 0 calc(50% - 24px);
@@ -9420,12 +9420,12 @@ body:not(.touch-device) .header__item:hover .header__body {
     display: block;
     margin: 0;
   }
-  .demo__item {
+  .demo__item .demo__iitem {
     width: 100%;
     margin: 0;
     padding: 32px;
   }
-  .demo__item:nth-child(2) .demo__btn {
+  .demo__item:nth-child(2) .demo__btn .demo__item:first-child {
     -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   }
