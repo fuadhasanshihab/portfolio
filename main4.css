@@ -5098,7 +5098,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   border-radius: 40px;
 }
 
-.demo__iitem:first-child {
+.demo__item:first-child {
   border: 1px solid #E3E6E9;
   background: #fff;
 }
