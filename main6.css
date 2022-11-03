@@ -2120,7 +2120,7 @@ body.no-scroll {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9;
+  z-index: 10;
   padding: 48px 0;
 }
 
@@ -2149,7 +2149,7 @@ body.no-scroll {
 
 .header__burger {
   position: relative;
-  z-index: 9;
+  z-index: 15;
   display: none;
   width: 24px;
   height: 24px;
@@ -8669,7 +8669,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9;
+    z-index: 10;
     min-height: 100vh;
     background: #fff;
     padding: 225px 0 40px;
