@@ -1,4 +1,4 @@
-//  copyright lexilogos.com
+//  Fuad Hasan Shihab 
 var car;
 
 function transcrire() {
@@ -19,9 +19,6 @@ car = car.replace(/[eê]/g, "এ");
 car = car.replace(/[oô]/g, "ও");
 car = car.replace(/অই/g, "ঐ");
 car = car.replace(/অউ/g, "ঔ");
-
-
-// suppression du virama 
 car = car.replace(/িই/g, "ী");
 car = car.replace(/ুউ/g, "ূ");
 car = car.replace(/্ও/g, "\u200b");
@@ -30,13 +27,11 @@ car = car.replace(/\u200bই/g, "ৈ");
 car = car.replace(/\u200bউ/g, "ৌ");
 car = car.replace(/\u200bও/g, "ো");
 car = car.replace(/\u200bঊ/g, "ৗ"); //aU 
-
 car = car.replace(/্আ/g, "া");
 car = car.replace(/্ই/g, "ি");
 car = car.replace(/্ঈ/g, "ী");
 car = car.replace(/্উ/g, "ু");
 car = car.replace(/্ঊ/g, "ূ");
-
 car = car.replace(/্ঋ/g, "ৃ");
 car = car.replace(/্ৠ/g, "ৄ");
 car = car.replace(/্ঌ/g, "ৢ");
@@ -44,8 +39,6 @@ car = car.replace(/্ৡ/g, " ৣ");
 car = car.replace(/্এ/g, "ে");
 //car = car.replace(/্ও/g, "ো");
 car = car.replace(/্ /g, " ");
-
-//cons
 car = car.replace(/n/g, "ন্");
 car = car.replace(/k/g, "ক্");
 car = car.replace(/g/g, "গ্");
@@ -67,14 +60,11 @@ car = car.replace(/l/g, "ল্");
 car = car.replace(/h/g, "হ্");
 car = car.replace(/[SṣṢ]/g, "ষ্");
 car = car.replace(/s/g, "স্");
-// cas particuliers 
 car = car.replace(/G/g, "ঙ্");
 car = car.replace(/J/g, "ঞ্");
 car = car.replace(/ñ/g, "ঞ্");
 car = car.replace(/ন্গ্/g, "ঙ্");
 car = car.replace(/ন্জ্/g, "ঞ্");
-
-// aspirées
 car = car.replace(/ক্হ্/g, "খ্");
 car = car.replace(/গ্হ্/g, "ঘ্");
 car = car.replace(/চ্হ্/g, "ছ্");
@@ -86,29 +76,20 @@ car = car.replace(/দ্হ্/g, "ধ্");
 car = car.replace(/প্হ্/g, "ফ্");
 car = car.replace(/ব্হ্/g, "ভ্");
 car = car.replace(/ড়্হ্/g, "ঢ়্");
-
-
-// cas du s barre
+// shihab
 car = car.replace(/স্হ্/g, "শ্");
 car = car.replace(/[çzśŚ]/g, "শ্");
-
-// cas du ri li 
 car = car.replace(/্-র্/g, "ৃ");
 car = car.replace(/-র্/g, "ঋ");
 car = car.replace(/ঋই/g, "ৠ");
 car = car.replace(/ৃই/g, "ৄ");
-
 car = car.replace(/্-ল্/g, "ৢ");
 car = car.replace(/-ল্/g, "ঌ");
 car = car.replace(/ঌই/g, "ৡ");
 car = car.replace(/ৢই/g, "ৣ");
-
-// ponctuation devanagari
 car = car.replace(/\|/g, "।");
 car = car.replace(/\//g, "।");
 car = car.replace(/।।/g, "॥");
-
-//suppression du zero
 car = car.replace(/\u200bক/g, "ক");
 car = car.replace(/\u200bখ/g, "খ");
 car = car.replace(/\u200bগ/g, "গ");
@@ -144,21 +125,17 @@ car = car.replace(/\u200bহ/g, "হ");
 car = car.replace(/\u200b /g, " ");
 car = car.replace(/\u200b\ং/g, "ং");
 car = car.replace(/\u200b\ঃ/g, "ঃ");
-
-// anusvara
 car = car.replace(/[Mṁ]/g, "ং");
 car = car.replace(/্ং/g, "ং");
-// candrabindu 
+// fuad hasan
 car = car.replace(/ংং/g, "ঁ");
-// visarga
+// shihab
 car = car.replace(/[Hḥ]/g, "ঃ");
 car = car.replace(/্ঃ/g, "ঃ");
-
 // alternative : car = car.replace(/:/g, "ः");
-// avagraha
+
 car = car.replace(/\'/g, "ঽ");
 car = car.replace(/’/g, "ঽ");
-
 car = car.replace(/0/g, "০");
 car = car.replace(/1/g, "১");
 car = car.replace(/2/g, "২");
@@ -169,16 +146,13 @@ car = car.replace(/6/g, "৬");
 car = car.replace(/7/g, "৭");
 car = car.replace(/8/g, "৮");
 car = car.replace(/9/g, "৯");
-
 startPos = document.conversion.saisie.selectionStart;
 endPos = document.conversion.saisie.selectionEnd;
 
 beforeLen = document.conversion.saisie.value.length;
 afterLen = car.length;
 adjustment = afterLen - beforeLen;
-
 document.conversion.saisie.value = car;
-
 document.conversion.saisie.selectionStart = startPos + adjustment;
 document.conversion.saisie.selectionEnd = endPos + adjustment;
 
