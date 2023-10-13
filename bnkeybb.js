@@ -1,4 +1,4 @@
-//  fhs
+//  copyright lexilogos.com
 function alpha(item) {
     var input = document.conversion.saisie;
     if (document.selection) {
@@ -41,8 +41,7 @@ function annuler() {
     document.conversion.saisie.value = car;
 }
 
-
-//  fhs
+//  copyright lexilogos.com
 var car;
 
 function transcrire() {
@@ -63,6 +62,9 @@ car = car.replace(/[eÃª]/g, "à¦");
 car = car.replace(/[oÃ´]/g, "à¦“");
 car = car.replace(/à¦…à¦‡/g, "à¦");
 car = car.replace(/à¦…à¦‰/g, "à¦”");
+
+
+// suppression du virama 
 car = car.replace(/à¦¿à¦‡/g, "à§€");
 car = car.replace(/à§à¦‰/g, "à§‚");
 car = car.replace(/à§à¦“/g, "\u200b");
@@ -86,7 +88,7 @@ car = car.replace(/à§à¦/g, "à§‡");
 //car = car.replace(/à§à¦“/g, "à§‹");
 car = car.replace(/à§ /g, " ");
 
-//fhs
+//cons
 car = car.replace(/n/g, "à¦¨à§");
 car = car.replace(/k/g, "à¦•à§");
 car = car.replace(/g/g, "à¦—à§");
@@ -108,14 +110,14 @@ car = car.replace(/l/g, "à¦²à§");
 car = car.replace(/h/g, "à¦¹à§");
 car = car.replace(/[Sá¹£á¹¢]/g, "à¦·à§");
 car = car.replace(/s/g, "à¦¸à§");
-// fyjftj
+// cas particuliers 
 car = car.replace(/G/g, "à¦™à§");
 car = car.replace(/J/g, "à¦žà§");
 car = car.replace(/Ã±/g, "à¦žà§");
 car = car.replace(/à¦¨à§à¦—à§/g, "à¦™à§");
 car = car.replace(/à¦¨à§à¦œà§/g, "à¦žà§");
 
-// jxcyjr
+// aspirÃ©es
 car = car.replace(/à¦•à§à¦¹à§/g, "à¦–à§");
 car = car.replace(/à¦—à§à¦¹à§/g, "à¦˜à§");
 car = car.replace(/à¦šà§à¦¹à§/g, "à¦›à§");
@@ -127,19 +129,29 @@ car = car.replace(/à¦¦à§à¦¹à§/g, "à¦§à§");
 car = car.replace(/à¦ªà§à¦¹à§/g, "à¦«à§");
 car = car.replace(/à¦¬à§à¦¹à§/g, "à¦­à§");
 car = car.replace(/à§œà§à¦¹à§/g, "à§à§");
+
+
+// cas du s barre
 car = car.replace(/à¦¸à§à¦¹à§/g, "à¦¶à§");
 car = car.replace(/[Ã§zÅ›Åš]/g, "à¦¶à§");
+
+// cas du ri li 
 car = car.replace(/à§-à¦°à§/g, "à§ƒ");
 car = car.replace(/-à¦°à§/g, "à¦‹");
 car = car.replace(/à¦‹à¦‡/g, "à§ ");
 car = car.replace(/à§ƒà¦‡/g, "à§„");
+
 car = car.replace(/à§-à¦²à§/g, "à§¢");
 car = car.replace(/-à¦²à§/g, "à¦Œ");
 car = car.replace(/à¦Œà¦‡/g, "à§¡");
 car = car.replace(/à§¢à¦‡/g, "à§£");
+
+// ponctuation devanagari
 car = car.replace(/\|/g, "à¥¤");
 car = car.replace(/\//g, "à¥¤");
 car = car.replace(/à¥¤à¥¤/g, "à¥¥");
+
+//suppression du zero
 car = car.replace(/\u200bà¦•/g, "à¦•");
 car = car.replace(/\u200bà¦–/g, "à¦–");
 car = car.replace(/\u200bà¦—/g, "à¦—");
@@ -175,15 +187,21 @@ car = car.replace(/\u200bà¦¹/g, "à¦¹");
 car = car.replace(/\u200b /g, " ");
 car = car.replace(/\u200b\à¦‚/g, "à¦‚");
 car = car.replace(/\u200b\à¦ƒ/g, "à¦ƒ");
+
+// anusvara
 car = car.replace(/[Má¹]/g, "à¦‚");
 car = car.replace(/à§à¦‚/g, "à¦‚");
+// candrabindu 
 car = car.replace(/à¦‚à¦‚/g, "à¦");
+// visarga
 car = car.replace(/[Há¸¥]/g, "à¦ƒ");
 car = car.replace(/à§à¦ƒ/g, "à¦ƒ");
 
 // alternative : car = car.replace(/:/g, "à¤ƒ");
+// avagraha
 car = car.replace(/\'/g, "à¦½");
 car = car.replace(/â€™/g, "à¦½");
+
 car = car.replace(/0/g, "à§¦");
 car = car.replace(/1/g, "à§§");
 car = car.replace(/2/g, "à§¨");
